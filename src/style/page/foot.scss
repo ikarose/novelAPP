@@ -1,0 +1,29 @@
+.foot{
+    box-sizing: border-box;
+    width: 100%;
+    height: 137px;
+    background: #eeeeee;
+    border-top:1px solid #cdcdcd;
+    a{
+        &:nth-last-child(1){
+            border-right:none;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        box-sizing: border-box;
+        width: 216px;
+        height: 137px;
+        float: left;
+        border-right:1px solid #cdcdcd;
+        i{
+            font-size: 60px;
+            color: #818181;
+        }
+        span{
+            font-size: 24px;
+            color: #555;
+        }
+    }
+}

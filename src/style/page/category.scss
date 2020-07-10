@@ -1,0 +1,111 @@
+.category{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 26px;
+    background: #e8e8e8;
+    .channel{
+        box-sizing: border-box;    
+        width: 1028px;
+        height: auto;
+        padding:0 39px 0;
+        background: #fff;
+        border-radius: 20px;
+        margin-bottom: 52px;
+        &:nth-last-child(1){margin-bottom: 0;}
+        .channel-head{
+            box-sizing: border-box;
+            height: 116px;
+            border-bottom: {
+                style:solid;
+                width: 1px;
+            }
+            i{
+                display: block;
+                float: left;
+                margin-top: 40px;
+                font-size: 55px;
+            }
+            span{
+                display: block;
+                float: left;
+                margin-top: 40px;
+                margin-left:20px;                
+                font-size: 42px;
+            }
+        }
+        .channel-body{
+            box-sizing: border-box;
+            padding:76px 66px; 
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            .channel-blocks{
+                float: left;
+                width: 250px;
+                height: 127px;
+                color: #7d7d7d;
+                position: relative;
+                font-size: 44px;
+                a{
+                    color: #7d7d7d;
+                }
+                &::after{
+                    content:"";
+                    width: 3px;
+                    height: 53px;
+                    background: #7d7d7d;
+                    position: absolute;
+                    left:100%;
+                    top:5px;
+                }
+                &:nth-child(3n){
+                    text-align: right;
+                    &::after{
+                        width: 0;
+                    }
+                }
+                &:nth-child(3n+2){
+                    text-align: center;
+                    width: 316px;
+                }
+            }
+        }
+    }
+    .male{
+        .channel-head{
+            border-color: #0aab79;
+            i{
+                color:#0aab79;
+            }
+            span{
+                color:#0aab79;
+            }
+        }
+    }
+    .female{
+        .channel-head{
+            border-color: #e70012;
+            i{
+                color:#e70012;
+            }
+            span{
+                color:#e70012;
+            }
+        }
+    }
+    .social{
+        .channel-head{
+            border-color: #8b5816;
+            i{
+                color:#8b5816;
+            }
+            span{
+                color:#8b5816;
+            }
+        }
+    }
+}
+
+
+
+
